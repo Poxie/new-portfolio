@@ -1,0 +1,30 @@
+.button {
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity .2s;
+    text-align: center;
+    transition: background-color .2s;
+}
+.button.rounded {
+    border-radius: 120px;
+}
+.button.primary {
+    background-color: var(--primary-color);
+
+    &:hover {
+        background-color: var(--primary-color-hover);
+    }
+}
+.button.secondary {
+    background-color: var(--secondary-background);
+
+    &:hover {
+        background-color: var(--secondary-background-hover);
+    }
+}
+.button.transparent {
+    background-color: transparent;
+}
