@@ -1,3 +1,5 @@
+import { forwardRef } from "react";
+
 interface Props {
     children: any;
     className?: string;
@@ -6,9 +8,10 @@ interface Props {
     alignItems?: 'center' | 'flex-end' | 'flex-start';
     flexWrap?: 'no-wrap' | 'wrap';
     style?: any;
+    ref?: any;
 }
 
-export const Flex: React.FC<Props> = ({ children, className, flexDirection, flexWrap, justifyContent, alignItems, style: styling }) => {
+export const Flex: React.FC<Props> = forwardRef<HTMLDivElement, Props>(({ children, className, flexDirection, flexWrap, justifyContent, alignItems, style: styling }, ref) => {
     const style: any = {
         display: 'flex',
         flexDirection,
@@ -20,8 +23,8 @@ export const Flex: React.FC<Props> = ({ children, className, flexDirection, flex
     className = className ? `${className} flex` : 'flex';
 
     return(
-        <div style={style} className={className}>
+        <div style={style} className={className} ref={ref}>
             {children}
         </div>
     )
-}
+})
