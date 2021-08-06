@@ -13,7 +13,6 @@ export const Footer = () => {
         const handleScroll = () => {
             if(!ref.current) return;
             const { top, height } = ref.current.getBoundingClientRect();
-            console.log(top, height);
             if(top - 450 < height) {
                 setVisible(true);
                 document.removeEventListener('scroll', handleScroll);
