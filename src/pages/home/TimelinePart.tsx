@@ -9,9 +9,10 @@ interface Props {
     isAnimated: boolean;
     isLeft?: boolean;
     isLast?: boolean;
+    isMobile?: boolean;
 }
 
-export const TimelinePart: React.FC<Props> = ({ title, description, year, date, isLeft, isAnimated, isLast }) => {
+export const TimelinePart: React.FC<Props> = ({ title, description, year, date, isLeft, isAnimated, isLast, isMobile }) => {
     let justifyContent : 'flex-start' | 'flex-end' | 'center';
     if(isLeft && !isLast) {
         justifyContent = 'flex-start';
@@ -21,7 +22,7 @@ export const TimelinePart: React.FC<Props> = ({ title, description, year, date, 
         justifyContent = 'center';
     }
     return(
-        <Flex className={`timeline-part${isAnimated ? ' is-animated' : ''}${isLeft ? ' is-left' : ''}${isLast ? ' is-last' : ''}`} justifyContent={justifyContent}>
+        <Flex className={`timeline-part${isAnimated ? ' is-animated' : ''}${isLeft ? ' is-left' : ''}${isLast ? ' is-last' : ''}${isMobile ? ' is-mobile' : ''}`} justifyContent={justifyContent}>
             <div className="timeline-part-container">
                 <div className="timeline-part-text">
                     <h3>
