@@ -128,6 +128,38 @@
     }
 }
 
+.mobile-tree {
+    .timeline-dot {
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+    .project {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 45px;
+
+        .overlay {
+            display: none;
+        }
+    }
+    .project:not(:last-of-type) .project-branch:before {
+        top: 100%;
+        height: 45px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .project:last-of-type {
+        .project-branch:before {
+            display: none;
+        }
+    }
+    .project-container {
+        transition-delay: none;
+        transform: scale(1);
+        opacity: 1;
+        margin: 0;
+    }
+}
 .timeline-part {
     font-size: 18px;
 
@@ -159,6 +191,26 @@
         .timeline-part-text::after {
             animation: connection-branch-in .4s forwards;
             animation-delay: 1.7s;
+        }
+    }
+
+    &.is-mobile {
+        margin-top: 0;
+        margin-left: 0;
+
+        .timeline-part-container {
+            max-width: 90% !important;
+            margin: 0 auto;
+            width: unset;
+            height: unset;
+
+            &:before {
+                left: 50%;
+                transform: translateX(-50%);
+                top: 100%;
+                width: var(--timeline-line-width) !important;
+                height: 50px;
+            }
         }
     }
 }
@@ -199,7 +251,7 @@
 .timeline-part.is-animated {
     .timeline-part-container {
         &:before {
-            width: 70px !important;
+            width: 70px;
         }
     }
 }
@@ -262,22 +314,6 @@
     .timeline-part-text {
         opacity: 1;
         transform: translateX(0);
-    }
-}
-@media only screen and (max-width: 650px) {
-    .timeline-part {
-        margin-top: 90px;
-    }
-    .timeline-part-container {
-        max-width: 100% !important;
-        height: calc(var(--timeline-line-height) + 80px);
-
-        &:before {
-            display: none;
-        }
-    }
-    .timeline-dot {
-        margin-bottom: calc(var(--timeline-line-height) + 85px);
     }
 }
 
@@ -462,7 +498,6 @@
         left: 100%;
     }
 }
-
 
 @keyframes animate-podium {
     0% {
