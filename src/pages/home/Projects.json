@@ -1,0 +1,16 @@
+{
+    "projects": [
+        {
+            "title": "Meetings",
+            "description": "Next generation meetings",
+            "image": "https://i.poxgur.com/EVGUyP.png",
+            "link": "https://google.com"
+        },
+        {
+            "title": "Graphing",
+            "description": "Statistics don't have to be difficult",
+            "image": "https://i.poxgur.com/dVgteZ.png",
+            "link": "https://google.com"
+        }
+    ]
+}
