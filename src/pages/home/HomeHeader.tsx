@@ -1,6 +1,5 @@
 import { Flex } from "../../components/Flex"
 import { HeaderBackground } from "./HeaderBackground"
-import { HeaderChart } from "./HeaderChart"
 import { HeaderLinks } from "./HeaderLinks"
 import { HeaderText } from "./HeaderText"
 
@@ -10,7 +9,6 @@ export const HomeHeader = () => {
             <HeaderBackground />
             <HeaderText />
             <HeaderLinks />
-            {/* <HeaderChart /> */}
         </Flex>
     )
 }
