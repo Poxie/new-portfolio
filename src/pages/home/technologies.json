@@ -1,0 +1,35 @@
+{
+    "technologies": [
+        {
+            "addons": ["FastAPI", "MySQL", "Flask"],
+            "icon": "https://cdn.iconscout.com/icon/free/png-256/python-3521655-2945099.png",
+            "language": "Python",
+            "description": "I also explored Python for backend. I know it pretty well, but I prefer Node.js."
+        },
+        {
+            "addons": ["Express.js", "Socket.io", "MySQL"],
+            "icon": "https://icon-library.com/images/node-js-icon/node-js-icon-8.jpg",
+            "language": "Node.js",
+            "description": "The first backend language I tried, and I have pretty much kept its presence by my side since."
+        },
+        {
+            "addons": ["JSX", "React.js", "Electron.js"],
+            "icon": "https://cdn.iconscout.com/icon/free/png-512/javascript-2752148-2284965.png",
+            "language": "JavaScript",
+            "description": "The language I started with, and the one I enjoy the most by far.",
+            "isMain": true
+        },
+        {
+            "addons": ["Sass", "Transitions", "Keyframes"],
+            "icon": "https://www.seekpng.com/png/full/377-3772047_sass-logo.png",
+            "language": "CSS",
+            "description": "Designing things used to be a pain for me, but on recent days I've begun enjoying it, especially with animations."
+        },
+        {
+            "addons": ["JSX"],
+            "icon": "https://cdn0.iconfinder.com/data/icons/social-network-7/50/22-512.png",
+            "language": "HTML",
+            "description": "I barely use default HTML nowadays, it's usually just JSX. They're pretty much the same though."
+        }
+    ]
+}
