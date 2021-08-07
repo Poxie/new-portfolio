@@ -620,6 +620,30 @@
         margin-bottom: 25px;
         height: unset !important;
     }
+    .home-header {
+        align-items: unset !important;
+    }
+    .header-text {
+        padding: 150px 0;
+
+        .animated-part {
+            font-size: 31px !important;
+        }
+        &>.flex .fade {
+            width: 100%;
+        }
+    }
+    .header-links {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+
+        .header-link {
+            margin: 50px 25px;
+        }
+    }
 }
 
 
