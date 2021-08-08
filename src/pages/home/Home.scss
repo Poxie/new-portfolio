@@ -511,10 +511,10 @@
 }
 // Technologies
 .technologies {
-    padding: 250px 0 0 0;
-    height: 570px;
+    height: 560px;
     max-width: 90%;
     margin: 0 auto;
+    padding: 250px 0 0 0;
     overflow: hidden;
 
     &.visible {
@@ -655,6 +655,8 @@
     position: relative;
     overflow: hidden;
     border-top: 2px solid var(--primary-background);
+    font-size: 40px;
+    font-weight: bold;
 
     .button {
         font-size: 20px;
