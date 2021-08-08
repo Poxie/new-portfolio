@@ -26,17 +26,14 @@ export const Footer = () => {
         <Flex className={`footer${visible ? ' visible' : ''}`} ref={ref} justifyContent={'center'} alignItems={'center'} flexDirection={'column'}>
             <span className="footer-overlay"/>
             {visible && (
-                <WaitFor delay={800}>
-                    <AnimatedText 
-                        text={'Well, are you ready?'}
-                        bold={true}
-                    />
-                    <Fade delay={1200}>
-                        <Button rounded={true}>
-                            Let's do this
-                        </Button>
-                    </Fade>
-                </WaitFor>
+                <>
+                <span>
+                    Well, are you ready?
+                </span>
+                <Button rounded={true}>
+                    Let's do this
+                </Button>
+                </>
             )}
         </Flex>
     )
