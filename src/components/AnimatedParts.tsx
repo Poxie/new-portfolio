@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react"
+import React, { useEffect, useRef, useState } from "react"
 import './AnimatedParts.scss';
 import { Flex } from "./Flex";
 
@@ -41,14 +41,14 @@ export const AnimatedParts: React.FC<Props> = ({ parts, bold, wordBreak, justify
         <Flex className="animated-parts" style={style} flexWrap={'wrap'} justifyContent={justifyCenter ? 'center' : undefined}>
             {spans.map((part, key) => {
                 return(
-                    <>
-                    <div key={key} className={`animated-part${part.shouldAnimated ? ' animate' : ''}`}>
-                        {part.content}
-                    </div>
-                    {wordBreak === key && (
-                        <span className="break" style={{display: 'block', width: '100%'}}></span>
-                    )}
-                    </>
+                    <React.Fragment key={key}>
+                        <div className={`animated-part${part.shouldAnimated ? ' animate' : ''}`}>
+                            {part.content}
+                        </div>
+                        {wordBreak === key && (
+                            <span className="break" style={{display: 'block', width: '100%'}}></span>
+                        )}
+                    </React.Fragment>
                 )
             })}
         </Flex>
