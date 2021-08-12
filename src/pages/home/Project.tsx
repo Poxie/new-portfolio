@@ -39,6 +39,7 @@ export const Project: React.FC<Props> = ({ title, description, link, animate, in
                     <img src={image} alt="" />
                 </Flex>
             </Flex>
+            <span className={`project-branch bottom-branch${reverted ? ' reverted' : ''}`}></span>
         </Flex>
     )
 }

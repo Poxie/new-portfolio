@@ -133,6 +133,13 @@
         margin-bottom: 25px;
         margin-top: 25px;
     }
+    .special-project {
+        margin-top: 0 !important;
+
+        &:before {
+            display: none;
+        }
+    }
     .project {
         width: 90%;
         margin: 0 auto;
@@ -343,6 +350,30 @@
         }
     }
 }
+.special-project.animate {
+    margin-top: 100px;
+    position: relative;
+    
+    .project-container {
+        transition-delay: 4.5s !important;
+    }
+    .project-branch {
+        display: none;
+    }
+    &:before {
+        content: '';
+        height: 0;
+        width: var(--timeline-line-width);
+        background-color: var(--third-background);
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: connection-branch-in .4s forwards;
+        animation-delay: 4s;
+        margin-bottom: -11px;
+    }
+}
 
 .project-branch:before {
     border: var(--timeline-line-width) solid var(--third-background);
@@ -355,6 +386,27 @@
     left: calc(50% + 40px);
     width: 0;
     height: 0;
+}
+.animate {
+    .bottom-branch:before {
+        bottom: unset;
+        top: calc(100%);
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 8px;
+        border-bottom-width: unset !important;
+        border-top-width: 0 !important;
+        animation-delay: 4s !important;
+    }
+    .bottom-branch:before {
+        animation: bottom-project-branch-in .4s forwards !important;
+        animation-delay: 4s !important;
+    }
+    .bottom-branch.reverted:before {
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 0;
+        animation: bottom-project-branch-reverted-in .4s forwards !important;
+        animation-delay: 4s !important;
+    }
 }
 .project-branch.reverted:before {
     border: var(--timeline-line-width) solid var(--third-background);
@@ -407,6 +459,46 @@
         width: calc(50% + 44px);
         height: 48px;
         bottom: 100%;
+        right: 50%;
+    }
+}
+@keyframes bottom-project-branch-in {
+    0% {
+        width: 0;
+        height: 0;
+        top: calc(100% + 48px);
+        left: calc(100% + 44px);
+    }
+    70% {
+        width: calc(50% + 44px);
+        left: 50%;
+        height: 0;
+        top: calc(100% + 48px);
+    }
+    100% {
+        width: calc(50% + 44px);
+        height: 48px;
+        top: 100%;
+        left: 50%;
+    }
+}
+@keyframes bottom-project-branch-reverted-in {
+    0% {
+        width: 0;
+        height: 0;
+        top: calc(100% + 48px);
+        right: calc(100% + 44px);
+    }
+    70% {
+        width: calc(50% + 44px);
+        right: 50%;
+        height: 0;
+        top: calc(100% + 48px);
+    }
+    100% {
+        width: calc(50% + 44px);
+        height: 48px;
+        top: 100%;
         right: 50%;
     }
 }

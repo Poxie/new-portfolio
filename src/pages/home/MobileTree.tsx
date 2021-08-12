@@ -34,6 +34,17 @@ export const MobileTree = () => {
                     />
                 )   
             })}
+            <div className={`special-project animate`}>
+                <Project 
+                    title={'Spotify'}
+                    description={'Spotify API for everyone'}
+                    image={'https://i.poxgur.com/bhcy5v.png'}
+                    link={'https://spotify.poxen.dev'}
+                    animate={true}
+                    index={projects.length}
+                    reverted={false}
+                />
+            </div>
         </div>
     )
 }
