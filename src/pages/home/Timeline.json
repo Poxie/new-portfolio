@@ -15,13 +15,13 @@
         {
             "year": 19,
             "title": "Data consumption",
-            "description": "After quite some time, I decided frontend wasn't good enough. Therefore, I explored other options like Python and Node.js. My personal favorite for websites and APIs is Node.js (it's pretty much JavaScript), but I also know Python well..",
+            "description": "After quite some time, I decided frontend wasn't good enough. Therefore, I explored other options like Python and Node.js. My personal favorite for websites and APIs is Node.js (it's pretty much JavaScript), but I also know Python well.",
             "date": "December, 2019"
         },
         {
             "year": 21,
             "title": "Things get pretty",
-            "description": "This is when I started thinking, \"Maybe programming is something I want to do for a living\". Therefore, I put effort into both designs and also made code as optimized as possible. Here are some examples.",
+            "description": "This is when I started thinking, \"Maybe programming is something I want to do for a living\". Therefore, I put effort into designs and also made code as optimized as possible. Here are some examples.",
             "date": "June, 2021"
         }
     ]
