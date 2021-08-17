@@ -4,13 +4,15 @@
             "title": "Meetings",
             "description": "Next generation meetings",
             "image": "https://i.poxgur.com/EVGUyP.png",
-            "link": "https://chat.poxen.dev"
+            "link": "https://chat.poxen.dev",
+            "github": "https://github.com/Poxie/chat-app.git"
         },
         {
             "title": "Graphing",
             "description": "Statistics don't have to be difficult",
             "image": "https://i.poxgur.com/dVgteZ.png",
-            "link": "https://graph.poxen.dev"
+            "link": "https://graph.poxen.dev",
+            "github": "https://github.com/Poxie/graph-app.git"
         }
     ]
 }

@@ -553,6 +553,12 @@
         font-size: 14px;
     }
 
+    svg {
+        width: 30px;
+        fill: var(--primary-text);
+        transform: translateY(6px);
+    }
+
     &:hover {
         .project-image {
             img {
@@ -588,6 +594,7 @@
 }
 .project-text {
     z-index: 14;
+    width: 100%;
 
     .button {
         margin-top: 20px;

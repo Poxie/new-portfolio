@@ -21,7 +21,7 @@ export const MobileTree = () => {
                 )
             })}
             {projects.map((project, key) => {
-                const { title, description, image, link } = project;
+                const { title, description, image, link, github } = project;
                 return(
                     <Project 
                         animate={true}
@@ -29,6 +29,7 @@ export const MobileTree = () => {
                         image={image}
                         link={link}
                         title={title}
+                        github={github}
                         index={key}
                         key={key}
                     />
@@ -39,8 +40,9 @@ export const MobileTree = () => {
                     title={'Spotify'}
                     description={'Spotify API for everyone'}
                     image={'https://i.poxgur.com/bhcy5v.png'}
-                    link={'https://spotify.poxen.dev'}
+                    link={'https://spot.poxen.dev'}
                     animate={true}
+                    github={'https://github.com/Poxie/spotify-app.git'}
                     index={projects.length}
                     reverted={false}
                 />
