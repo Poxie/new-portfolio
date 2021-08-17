@@ -13,7 +13,7 @@
             "description": "The first backend language I tried, and I have pretty much kept its presence by my side since."
         },
         {
-            "addons": ["JSX", "React.js", "Electron.js"],
+            "addons": ["JSX", "React.js", "TypeScript", "Electron.js"],
             "icon": "https://cdn.iconscout.com/icon/free/png-512/javascript-2752148-2284965.png",
             "language": "JavaScript",
             "description": "The language I started with, and the one I enjoy the most by far.",
