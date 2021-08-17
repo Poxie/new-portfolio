@@ -30,9 +30,11 @@ export const Footer = () => {
                 <span>
                     Well, are you ready?
                 </span>
-                <Button rounded={true}>
-                    Let's do this
-                </Button>
+                <a href="mailto:albin.karvling@hotmail.com" style={{color: 'inherit', textDecoration: 'none'}}>
+                    <Button rounded={true}>
+                        Let's do this
+                    </Button>
+                </a>
                 </>
             )}
         </Flex>
