@@ -1,10 +1,10 @@
 {
     "years": [
         {
-            "year": 18,
+            "year": 17,
             "title": "How it all started",
             "description": "My coding journey began in 2017 by watching a course on Udemy. This course covered the overall basics of HTML, CSS and JavaScript, but gave far from a good foundation. I quickly started my self-taugh journey after this course, where Stackoverflow was my best friend.",
-            "date": "March, 2018"
+            "date": "March, 2017"
         },
         {
             "year": 19,
@@ -21,7 +21,7 @@
         {
             "year": 21,
             "title": "Things get pretty",
-            "description": "This is when I started thinking, \"Maybe programming is something I want to do for a living\". Therefore, I put effort into designs and also made code as optimized as possible. Here are some examples.",
+            "description": "This is when I started thinking, \"Maybe programming is something I want to do for a living\". Therefore, I put effort into designs and also made code as optimized as possible. Here are some examples (within the last month).",
             "date": "June, 2021"
         }
     ]
